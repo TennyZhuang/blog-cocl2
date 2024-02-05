@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://blog.cocl2.com'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "COCl2's blog home"
 
 [module]
 [[module.imports]]
