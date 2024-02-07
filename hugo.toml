@@ -34,4 +34,4 @@ lang = 'en'
 
 [params.plausible]
 enable = true
-endpoint = 'https://blog.cocl2.com'
+endpoint = 'blog.cocl2.com'
