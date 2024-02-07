@@ -2,6 +2,8 @@ baseURL = 'https://blog.cocl2.com'
 languageCode = 'en-us'
 title = "COCl2's blog home"
 
+theme = ["github.com/nanxiaobei/hugo-paper", "github.com/divinerites/plausible-hugo"]
+
 [module]
 [[module.imports]]
 path = "github.com/nanxiaobei/hugo-paper"
