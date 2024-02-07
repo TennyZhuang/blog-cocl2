@@ -10,7 +10,7 @@ path = "github.com/nanxiaobei/hugo-paper"
 path = "github.com/hugomods/images"
 
 [[module.imports]]
-path = 'github.com/hugomods/plausible-analytics'
+path = 'github.com/divinerites/plausible-hugo'
 
 [params]
 color = 'linen'
@@ -30,5 +30,6 @@ mapping = 'pathname'
 theme = 'preferred_color_scheme'
 lang = 'en'
 
-[params.plausible_analytics]
-endpoint = 'https://plausible.io'
+[params.plausible]
+enable = true
+endpoint = 'https://blog.cocl2.com'
