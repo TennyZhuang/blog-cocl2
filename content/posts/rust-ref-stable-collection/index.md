@@ -139,7 +139,7 @@ This error is very obvious. The usage of `&mut cache` in `LruCache::get` causes 
 
 First of all, is the code correct? If we ignore the borrow checker, and according to the structure of `LruCache`, this usage is obviously correct. Although our `get` will adjust `LruCache`, it will not invalidate the references to Value that have already been held.
 
-### Can we hide the mutability of `get` method?
+### Can we hide the mutability of get method?
 
 The underlying operations on the linked list is unsafe, so if we trust our usage is correct, can we change the `get` method to receive `&self`?
 
@@ -236,7 +236,7 @@ dbg!(val_mut);
 
 Please note that there is a function that clearly should take `&mut perm`, but we cannot modify its signature, that is `drop`. It's terrible if we drop the `cache` without invalidate all references. Fortunately, this issue is resolved in the subsequent design, so let's temporarily ignore it here.
 
-### Associate between `LruCache` and `ValuePerm`
+### Associate LruCache and ValuePerm
 
 It is obvious that an `LruCache` can only be operated by one `Token`. If we construct multiple `ValuePerm` to simultaneously operate on the same `LruCache`, all our previous protection measures will be in vain.
 
