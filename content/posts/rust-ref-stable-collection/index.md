@@ -87,6 +87,8 @@ We call the ability as reference stability, it's associated with specified data 
 
 In this post, we propose a new Rust API design pattern (temporally named Permission pattern) which avoids such sacrifices by separating different permissions from the specified data structure. We'll introduce how we designd the pattern step by step using a simple data structure `LruCache`.
 
+TL;DR You can take a look at [the full code](https://github.com/TennyZhuang/ref-stable-lru) and [examples](https://github.com/TennyZhuang/ref-stable-lru/pull/2/files) here.
+
 ## LruCache
 
 LRU Cache is one of the most commonly used data structures in the industry, and the simplest implementation is based on a hash map and a linked list. When accessing a certain entry, this entry is moved to the front of the linked list, and the hash map will act as a lookup index.
