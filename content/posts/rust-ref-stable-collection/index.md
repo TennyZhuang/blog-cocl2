@@ -112,7 +112,7 @@ impl<K: Eq + Hash, V> LruCache<K, V> {
 
 In order to make the post simpler, we have simplified the function signature here, omitting optimizations related to the `Borrow` trait.
 
-Unlike ordinary collections, the `get` method here also receives `&mut self`, since we need to move the entry to the front of the linked list. This brings a lot of inconvinience to caller. For example, we may want to hold multiple immutable references to values in `LruCache`, which can allow us to reduce unnecessary clones.
+Unlike ordinary collections, the `get` method here also receives `&mut self`, since we need to move the entry to the front of the linked list. This brings a lot of inconvenience to caller. For example, we may want to hold multiple immutable references to values in `LruCache`, which can allow us to reduce unnecessary clones.
 
 ```rust
 let x = cache.get(&"a").unwrap().as_str();
@@ -423,7 +423,6 @@ impl<K, V> LruCache<K, V> {
             std::mem::transmute::<_, Option<&'cache V>>(cache.get(k, &perm))
         })
     }
-    
     // Other methods are similar
 }
 ```
