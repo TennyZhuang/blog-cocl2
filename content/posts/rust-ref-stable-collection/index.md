@@ -135,7 +135,7 @@ error[E0499]: cannot borrow `cache` as mutable more than once at a time
 
 This error is very obvious. The usage of `&mut cache` in `LruCache::get` causes `x` to already hold a mutable reference to `cache`, and then trying to create `y` and `z` will mutually borrowed `cache` multiple times, which violates Rust's borrowing mechnism.
 
-## Refining the `LruCache`'s API design
+## Refining the LruCache's API design
 
 First of all, is the code correct? If we ignore the borrow checker, and according to the structure of `LruCache`, this usage is obviously correct. Although our `get` will adjust `LruCache`, it will not invalidate the references to Value that have already been held.
 
