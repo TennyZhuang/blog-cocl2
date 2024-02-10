@@ -442,7 +442,7 @@ Since the scope API also requires `&mut self`, it is mutually exclusive with the
 
 ## Fill the implementation and open source
 
-So far, we have not filled in any implementation of `LruCache` yet. In fact, I completely copied this part from [lru-rs][lru-rs] and am very grateful to the author of that crate. I open sourced the code at <https://github.com/TennyZhuang/ref-stable-lru>, and you can find many [UI tests](https://github.com/TennyZhuang/ref-stable-lru/pull/2/files) here. The "compile-fail" cases record the unsafe code we want to prevent, while the "compile-pass" cases record the safe operations we want to support. Feel free to submit issue if you find some corner cases that are not covered or find some unsound bugs.
+So far, we have not filled in any implementation of `LruCache` yet. In fact, I completely copied this part from [lru-rs][lru-rs] and am very grateful to the author of that crate. I open sourced the code at <https://github.com/TennyZhuang/ref-stable-lru>, and you can find many [UI tests](https://github.com/TennyZhuang/ref-stable-lru/pull/2/files) here. The "compile-fail" cases record the unsafe code we want to prevent, while the "compile-pass" cases record the safe operations we want to support. Feel free to submit issue if you find some corner cases that are not covered or find some unsound bugs. You can also discuss the post in the discussion area under the page directly, or at [rust-internals forum](https://internals.rust-lang.org/t/design-safe-collection-api-with-compile-time-reference-stability-in-rust/20285).
 
 ## Conclusion
 
