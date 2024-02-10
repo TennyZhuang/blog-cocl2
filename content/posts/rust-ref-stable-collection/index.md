@@ -448,7 +448,7 @@ So far, we have not filled in any implementation of `LruCache` yet. In fact, I c
 
 The main idea of the post is separating different parts of the data structure to differrent permissions. For some data structures with complex operations, we can even create more types of permissions and methods may have differrent permutations.
 
-The API design also achieve "pay as you need". A collection can add the fine-grained permission API by only adding a `scope` method, without breaking any existing APIs. I'm considering to propose a `VecDeque::scope` API to std library, which allowed call `push` while holding stable value references.
+The API design also achieve "pay as you need". A collection can add the fine-grained permission API by only adding a `scope` method, without breaking any existing APIs. I'm considering to propose a `LinkedList::scope` API to std library, which allowed call `push` while holding stable value references.
 
 I want to express my deepest gratitude to the the authors of [Ghost Cell][ghost-cell], since the whole idea is mainly from their exciting paper and idea. I find the scope API may also be helpful to improve the usability of `GhostCell` API if its soundness can be proven.
 
