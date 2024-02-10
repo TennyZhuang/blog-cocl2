@@ -450,13 +450,13 @@ The main idea of the post is separating different parts of the data structure to
 
 The API design also achieve "pay as you need". A collection can add the fine-grained permission API by only adding a `scope` method, without breaking any existing APIs. I'm considering to propose a `LinkedList::scope` API to std library, which allowed call `push` while holding stable value references.
 
-I want to express my deepest gratitude to the the authors of [Ghost Cell][ghost-cell], since the whole idea is mainly from their exciting paper and idea. I find the scope API may also be helpful to improve the usability of `GhostCell` API if its soundness can be proven.
+I want to express my deepest gratitude to the the authors of [Ghost Cell][ghost_cell], since the whole idea is mainly from their exciting paper and idea. I find the scope API may also be helpful to improve the usability of `GhostCell` API if its soundness can be proven.
 
 I hope the design pattern can help Rust to sacrified less flexibility while keeping strong safety.
 
 [cpp_reference_iterator_invalidation]:https://en.cppreference.com/w/cpp/container#Iterator_invalidation
 [lru-rs]:https://github.com/jeromefroe/lru-rs	"lru-rs"
-[ghost_cell]:https://crates.io/crates/ghost-cell
+[ghost_cell]:https://crates.io/crates/ghost_cell
 [thread_scope]:https://doc.rust-lang.org/std/thread/fn.scope.html
 [subtyping]:https://doc.rust-lang.org/nomicon/subtyping.html
 [CPS]:https://en.wikipedia.org/wiki/Continuation-passing_style
