@@ -81,7 +81,7 @@
   <!-- Generator -->
   {{ hugo.Generator }}
 
-  {{ partial "plausible_head.html" . }}
+  {{ partial "plausible-analytics/assets/js" . }}
 
   <!-- Production -->
   {{ if or hugo.IsProduction (eq site.Params.env "production") }}

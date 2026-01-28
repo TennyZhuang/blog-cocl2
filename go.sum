@@ -1,6 +1,6 @@
-github.com/divinerites/plausible-hugo v1.22.0 h1:2pZheSaIMc+EtwcEeZv0ioU2qBOEZa1Ii7IaR/9II9k=
-github.com/divinerites/plausible-hugo v1.22.0/go.mod h1:cxr+YB3FUwbLon8KCs4pV4Ankbkq6lJxTQUpNb5KqPo=
 github.com/hugomods/images v0.12.3 h1:FiHZnFgbxn4SpxdY8harOxhYKA8WhAgibJoHhIe9sdU=
 github.com/hugomods/images v0.12.3/go.mod h1:U6Gwj16LKvk66rOMyGFrnF6f0aV8lT89lqOsckOAjYY=
+github.com/hugomods/plausible-analytics v0.3.0 h1:WkGgCkNtknw0eIL/iW4H+bCm4ROAbR+H0ilnseHjdLs=
+github.com/hugomods/plausible-analytics v0.3.0/go.mod h1:FAZ3u2dDF51TIm1QMY5B9mp3sXFgjEW0uv71+EisX+A=
 github.com/nanxiaobei/hugo-paper v0.0.0-20260125132454-ea99e0f67ff6 h1:DDBPV5rtTkrZ1Y7EadsGsU0tBj7798TvhySAIU0FAME=
 github.com/nanxiaobei/hugo-paper v0.0.0-20260125132454-ea99e0f67ff6/go.mod h1:cS2hTYPgmZ2FkPTQbOiX6vB0yLQcWD067kJx2lkRPVQ=
